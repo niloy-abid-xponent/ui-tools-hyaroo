@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  @apply antialiased;
 }
 
 a {
@@ -13,4 +17,48 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+/* Slider Styles */
+.slick-slider button.slick-arrow:before {
+  color: #222831;
+  border-radius: 50px;
+  padding: 1.1rem;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 7px 17px 34px 4px rgb(0 0 0 / 10%);
+  transition: 0.3s;
+}
+.slick-slider button.slick-arrow:hover:before {
+  background-color: #39C4FF !important;
+  transition: 0.3s;
+  color:#ffffff;
+}
+.slick-prev,
+.slick-next{
+  top: 40% !important;
+  z-index: 1;
+  width: auto;
+  height: auto;
+}
+.slick-prev{
+  left: -13px !important;
+}
+.slick-next{
+  right: 13px !important;
+}
+.home-service 
+.slick-prev{
+ left: -32px !important;
+}
+.home-service 
+.slick-next{
+  right: -8px !important;
+}
+.slick-prev:before {
+  content: ' \2190' !important;
+}
+.slick-next:before {
+  content: ' \f054';
 }
