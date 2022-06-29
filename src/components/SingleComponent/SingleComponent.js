@@ -5,11 +5,12 @@ import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const data = [{ title: "Preview" }, { title: "Code" }];
 
-export default function SingleComponent({ cardData }) {
-  const { cardname, components } = cardData;
+export default function SingleComponent({ cardInfo }) {
+  const { variant } = cardInfo;
   const [active, setActive] = useState("Preview");
   const [copied, setCopied] = useState(false);
   const textRef = useRef();
+  console.log(cardInfo);
 
   setTimeout(() => {
     copied && setCopied(false);
@@ -42,7 +43,7 @@ export default function SingleComponent({ cardData }) {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 lg:px-24">
       <div className="flex justify-between mt-12 items-center ">
         <p className="text-slate-900 font-medium">
-          Simple centered //
+          {variant} //
           <span className="bg-slate-100 text-slate-700 text-xs rounded-md ml-2 font-semibold hidden sm:inline-block px-2 py-1">
             Requires JS //
           </span>

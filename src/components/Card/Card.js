@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 export default function Card({ cardData }) {
   console.log("test", cardData);
 

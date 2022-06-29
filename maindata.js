@@ -12,36 +12,13 @@ export const maindata = [
             totalComponent: 9,
             img: "/img/Marketing/pagesections/Herosections/HeroBG.png",
             href: "/marketing/sections/heroes",
-            components: [
-              {
-                variant: "Simple centered",
-                jsRequired: true,
-                codeString: "<p>Navigation</p>",
-                variantImg:
-                  "/img/Marketing/pagesections/Herosections/variant1.png",
-              },
-              {
-                variant: "Split with navbar",
-                jsRequired: true,
-                codeString: "<p>Hello image</p>",
-                variantImg:
-                  "/img/Marketing/pagesections/Herosections/variant1.png",
-              },
-              {
-                variant: "With angled image on right",
-                jsRequired: true,
-                codeString: "<p>Hello</p>",
-                variantImg:
-                  "/img/Marketing/pagesections/Herosections/variant1.png",
-              },
-            ],
           },
-          // {
-          //   cardname: "Feature sections",
-          //   totalComponent: 10,
-          //   img: "/img/Marketing/pagesections/Herosections/HeroBG.png",
-          //   href: "/marketing/sections/features",
-          // },
+          {
+            cardname: "Feature sections",
+            totalComponent: 10,
+            img: "/img/Marketing/pagesections/Herosections/HeroBG.png",
+            href: "/marketing/sections/features",
+          },
           // {
           //   cardname: "CTA sections",
           //   totalComponent: 8,
