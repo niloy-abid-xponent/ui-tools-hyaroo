@@ -7,19 +7,11 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 const navItems = [
   {
     name: "Component",
-    href: "#",
-  },
-  {
-    name: "Documentation",
-    href: "#",
+    href: "/",
   },
   {
     name: "Search",
     href: "#",
-  },
-  {
-    name: "Account",
-    href: "/about",
   },
 ];
 
@@ -27,8 +19,8 @@ export default function Header() {
   return (
     <div>
       <header>
-        <Popover className="relative bg-white border-b-[1px]">
-          <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-24 ">
+        <Popover className="relative bg-white">
+          <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:justify-start lg:space-x-10 lg:px-24">
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link href="/">
                 <a className="flex items-center">
@@ -44,13 +36,13 @@ export default function Header() {
                 </a>
               </Link>
             </div>
-            <div className="-mr-2 -my-2 md:hidden">
+            <div className="-mr-2 -my-2 lg:hidden">
               <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-900 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <Popover.Group as="nav" className="hidden md:flex space-x-5">
+            <Popover.Group as="nav" className="hidden lg:flex space-x-5">
               {navItems.map((nav) => (
                 <Link href={nav.href} key={nav.href}>
                   <a className="text-sm font-medium text-slate-500 hover:text-slate-700 ">
@@ -116,3 +108,5 @@ export default function Header() {
     </div>
   );
 }
+
+// at popover classname

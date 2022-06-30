@@ -2,7 +2,6 @@ import React from "react";
 import SubHeading from "../src/components/SubHeading/SubHeading";
 import UiComponent from "../src/components/UiComponent/UiComponent";
 import Layout from "../src/layout";
-import Home from "../src/views/Home/home";
 import { maindata } from "../maindata";
 
 export default function HomePage() {

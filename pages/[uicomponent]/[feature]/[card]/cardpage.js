@@ -13,10 +13,6 @@ export default function CardPage() {
 
   const { components } = allcomponents[0];
 
-  console.log("abid", allcomponents[0]);
-
-  console.log("anjuman", components);
-
   // console.log("from cardpage", cardData);
   // console.log("abid", cardData);
   // console.log(cardData[0].variant);
